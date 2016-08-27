@@ -129,7 +129,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
 }
 .panel-custom > .panel-body {
   background-color: #F5F5F5;
-  height: 300px;
+  height: 180px;
   overflow: hidden;
 }
 .panel-custom > .panel-heading + .panel-collapse > .panel-body {

@@ -1,0 +1,10 @@
+.parent-float {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.float-right {
+    position: absolute;
+    right: 15px;
+}
