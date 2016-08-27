@@ -2,6 +2,25 @@
 html, body, .container-fluid, .row, .map { 
 	height: 100%;
 }
+.slider{
+	border: 1px solid #041e42;
+	width: 100%;
+	height: 500px;
+	background-image: url('../Pictures/team.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #041e42;
+	margin-bottom: 25px;
+}
+.slider h1 {
+	color: #ffec00;
+	position: relative;
+	margin: auto;
+	vertical-align: middle;
+	text-align: right;
+	font-size: 70px;
+	line-height: 800px;
+}
 
 #map-canvas {
 	width: 100%;
