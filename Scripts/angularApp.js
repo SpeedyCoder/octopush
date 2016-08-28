@@ -6,8 +6,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
         url: '/home',
-        cache: false,
         templateUrl: 'home/home.html',
         controller: "HomeCtrl"
+    })
+    .state('club', {
+        url: '/club',
+        templateUrl: 'club/club.html'
     });
 });
