@@ -12,5 +12,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('club', {
         url: '/club',
         templateUrl: 'club/club.html'
+    })
+    .state('playing', {
+        url: '/playing',
+        templateUrl: 'playing/playing.html'
     });
 });

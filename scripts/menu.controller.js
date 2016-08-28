@@ -1,3 +1,12 @@
 app.controller('MenuCtrl', function ($scope) {
-    console.log('Initialized.');
+
+    $scope.getClass = function (view) {
+        if (window.location.hash === view) {
+            return 'active';
+        }
+        else {
+            return ';'
+        }
+    };
+
 });

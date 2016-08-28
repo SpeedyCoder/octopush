@@ -63,14 +63,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#news" title="Octopush">News</a></li>
-            <li><a href="#octopush" title="Octopush">Octopush</a></li>
-            <li><a href="#club" title="Club">Club</a></li>
-            <li><a href="#playing" title="Playing at Oxford">Playing at Oxford</a></li>
-            <li><a href="#documents" title="Documents">Documents</a></li>
-            <li><a href="#links" title="Links">Links</a></li>
-            <li><a href="#contacts" title="Contacts">Contacts</a></li>
+            <li ng-class="getClass('#/home')"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li ng-class="getClass('#/news')"><a href="#news" title="News">News</a></li>
+            <li ng-class="getClass('#/octopush')"><a href="#octopush" title="Octopush">Octopush</a></li>
+            <li ng-class="getClass('#/club')"><a href="#club" title="Club">Club</a></li>
+            <li ng-class="getClass('#/playing')"><a href="#playing" title="Playing at Oxford">Playing at Oxford</a></li>
+            <li ng-class="getClass('#/documents')"><a href="#documents" title="Documents">Documents</a></li>
+            <li ng-class="getClass('#/links')"><a href="#links" title="Links">Links</a></li>
+            <li ng-class="getClass('#/comittee')"><a href="#comittee" title="Comittee">Committee</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
