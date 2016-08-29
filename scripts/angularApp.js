@@ -16,5 +16,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('playing', {
         url: '/playing',
         templateUrl: 'playing/playing.html'
+    })
+    .state('octopush', {
+        url: '/octopush',
+        templateUrl: 'octopush/octopush.html'
     });
 });
