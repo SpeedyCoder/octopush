@@ -28,7 +28,7 @@
 	margin-top: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   #club-name {
   	text-align: center;
   	margin-top: 60px;

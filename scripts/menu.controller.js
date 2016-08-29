@@ -9,9 +9,19 @@ app.controller('MenuCtrl', function ($scope) {
         }
     };
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('.nav a').on('click', function(){
-            $('.navbar-toggle').click()
-        });
+    function clickInMenu () {
+        $('.navbar-toggle').click();
     }
+
+    function bindMenuToggle() {
+        if (window.innerWidth <= 767) {
+            $('.nav a').bind('click', clickInMenu);
+        } else {
+            $('.nav a').unbind('click', clickInMenu);
+        }
+    }
+
+    $(window).resize(bindMenuToggle);
+    bindMenuToggle();
+    
 });
