@@ -1,3 +1,7 @@
+html,body{
+    height: 100%
+}
+
 #logo {
 	width: 150px;
  	height: 196px;
@@ -51,7 +55,15 @@
   }
 }
 
+.wrap {
+    min-height: -webkit-calc(100% - 388px);     /* Chrome */
+    min-height: -moz-calc(100% - 388px);     /* Firefox */
+    min-height: calc(100% - 388px);     /* native */
+}
+
 .footer {
+    position: relative;
+    clear: both;
 	background-color: #041e42;
 	border-color: #041e42;
 	border-radius: 0px 0px 0px 0px;

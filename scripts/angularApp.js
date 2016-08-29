@@ -20,5 +20,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('octopush', {
         url: '/octopush',
         templateUrl: 'octopush/octopush.html'
+    })
+    .state('documents', {
+        url: '/documents',
+        templateUrl: 'documents/documents.html'
     });
 });
