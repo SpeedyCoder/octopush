@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row my-row">
+        <h3 class="heading-top">Current Committee</h3>
+    </div><!--/row-->
+    <div class="row my-row">
+        <div class="col-sm-3" ng-repeat="member in committee">
+            <div class="panel panel-custom">
+                <div class="panel-body" id="profile-body">
+                    <img src="pictures/{{member.picture}}" class="profile">
+                    <h3 class="profile-name">{{member.name}}</h3>
+                    <h4 class="profile-name">{{member.role}}</h4>
+                </div><!--/panel-body-->
+                <div class="panel-footer" id="profile-footer">
+                    <p>
+                        <b>Email:</b> <br> &nbsp; 
+                        <a href="mailto:{{member.email}}">{{member.email}}</a><br>
+                        <b>College:</b> {{member.college}}
+                    </p>
+                </div><!--/panel-footer-->
+            </div><!--/panel-->
+        </div><!--/col-->
+    </div><!--/row-->
+    <div class="row my-row">
+        <h3 class="heading-top">Previous Committees</h3>
+        <div class="committee-container">
+            <table class="committee">
+                <thead>
+                    <tr>
+                        <td>Year</td>
+                        <td>President</td>
+                        <td>Secretary</td>
+                        <td>Treasurer</td>
+                        <td>IT/Webmaster</td>
+                        <td>Social secretary</td>
+                        <td>Captain</td>
+                        <td>Novice captain</td>
+                        <td>Kit officer</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='committee in oldCommittees'>
+                        <td>{{committee.year}}</td>
+                        <td>{{committee.president}}</td>
+                        <td>{{committee.secretary}}</td>
+                        <td>{{committee.treasurer}}</td>
+                        <td>{{committee.itOfficer}}</td>
+                        <td>{{committee.socialSecretary}}</td>
+                        <td>{{committee.captain}}</td>
+                        <td>{{committee.noviceCaptain}}</td>
+                        <td>{{committee.kitOfficer}}</td>
+                    </tr>
+            </tbody>
+            </table>
+        </div><!--/committee-container-->
+        <br>
+        <ul>
+            <li>Sebastian Leptihn - Senior Member in 2009/0</li>
+            <li>Amy Tregunna - Vice President in 2007/8</li>
+        </ul>        
+    </div><!--/row-->
+</div><!--/container-->

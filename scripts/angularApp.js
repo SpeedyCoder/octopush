@@ -7,7 +7,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('home', {
         url: '/home',
         templateUrl: 'home/home.html',
-        controller: "HomeCtrl"
+        controller: 'HomeCtrl'
     })
     .state('club', {
         url: '/club',
@@ -24,5 +24,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('documents', {
         url: '/documents',
         templateUrl: 'documents/documents.html'
+    })
+    .state('links', {
+        url: '/links',
+        templateUrl: 'links/links.html'
+    })
+    .state('committee', {
+        url: '/committee',
+        templateUrl: 'committee/committee.html',
+        controller: 'CommitteeCtrl'
     });
 });

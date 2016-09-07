@@ -1,0 +1,40 @@
+table.committee {
+    border-collapse: collapse;
+}
+
+table.committee thead td {
+    border-bottom: 1px solid black;
+}
+
+table.committee tr {
+    border-bottom: 1px solid black;
+}
+
+table.committee td {
+    padding: 5px 10px;
+}
+
+.committee-container {
+    width:100%;
+    overflow:auto;
+}
+
+.profile {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.profile-name {
+    color: #fff;
+    text-align: center;
+}
+
+#profile-body {
+    background-color: #041e42;
+    padding: 10px 0px 10px 0px;
+}
+
+#profile-footer {
+    padding: 10px 5px 0px 5px;
+}
