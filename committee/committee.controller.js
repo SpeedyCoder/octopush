@@ -1,49 +1,52 @@
 app.controller('CommitteeCtrl', function ($scope) {
     console.log('ready');
-    $scope.committee = [
-        {
-            role: 'President',
-            name: 'Ewan Flintham',
-            email: 'ewan.flintham@st-hildas.ox.ac.uk',
-            college: 'St Hilda\'s',
-            picture: 'figure.png'
-        },
-        {
-            role: 'Secretary and IT Officer',
-            name: 'C\xE9lia Souque',
-            email: '',
-            college: '',
-            picture: 'figure.png'
-        },
-        {
-            role: 'Treasurer',
-            name: 'Eleanor Mitchell',
-            email: 'eleanor.mitchell@st-annes.ox.ac.uk',
-            college: 'St Anne\'s',
-            picture: 'figure.png'
-        },
-        {
-            role: 'Captain',
-            name: 'Tom Scott',
-            email: 'thomas.scott@stcatz.ox.ac.uk',
-            college: 'St Catherine\'s',
-            picture: 'figure.png'
-        },
-        {
-            role: 'Social Secretary',
-            name: '',
-            email: '',
-            college: '',
-            picture: 'figure.png'
-        },
-        {
-            role: 'Kit Officer',
-            name: '',
-            email: '',
-            college: '',
-            picture: 'figure.png'
-        }
-
+    $scope.committeeRows = [
+        [
+            {
+                role: 'President',
+                name: 'Ewan Flintham',
+                email: 'ewan.flintham@st-hildas.ox.ac.uk',
+                college: 'St Hilda\'s',
+                picture: 'figure.png'
+            },
+            {
+                role: 'Secretary and IT Officer',
+                name: 'C\xE9lia Souque',
+                email: 'celia.souque@worc.ox.ac.uk',
+                college: 'Worcester',
+                picture: 'figure.png'
+            },
+            {
+                role: 'Treasurer',
+                name: 'Eleanor Mitchell',
+                email: 'eleanor.mitchell@st-annes.ox.ac.uk',
+                college: 'St Anne\'s',
+                picture: 'figure.png'
+            },
+            {
+                role: 'Captain',
+                name: 'Tom Scott',
+                email: 'thomas.scott@stcatz.ox.ac.uk',
+                college: 'St Catherine\'s',
+                picture: 'figure.png'
+            }
+        ],
+        [
+            {
+                role: 'Social Secretary',
+                name: 'Ela Portnoy',
+                email: '',
+                college: 'St Hilda\'s',
+                picture: 'figure.png'
+            },
+            {
+                role: 'Kit Officer',
+                name: 'James Martin Robinson',
+                email: 'james.martinrobinson@wadh.ox.ac.uk',
+                college: 'Wadham',
+                picture: 'figure.png'
+            }
+        ]
     ];
     $scope.oldCommittees = [
         {
@@ -52,10 +55,9 @@ app.controller('CommitteeCtrl', function ($scope) {
             secretary: 'C\xE9lia Souque',
             treasurer: 'Eleanor Mitchell',
             itOfficer: 'C\xE9lia Souque',
-            socialSecretary: '',
+            socialSecretary: 'Ela Portnoy',
             captain: 'Tom Scott',
-            noviceCaptain: '',
-            kitOfficer: ''
+            kitOfficer: 'James Martin Robinson'
         },
         {
             year: '2015/6',
@@ -65,7 +67,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Michal Bock',
             socialSecretary: 'Sufyen Buras-Stubbs',
             captain: 'Eleanor Mitchell',
-            noviceCaptain: '',
             kitOfficer: 'Harris Vince'
         },
         {
@@ -76,7 +77,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Luke Kelly',
             socialSecretary: 'Julian Bartram',
             captain: '',
-            noviceCaptain: 'Michal Bock',
             kitOfficer: 'Harris Vince'
         },
         {
@@ -87,7 +87,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Niels Martens',
             socialSecretary: 'Julian Bartram',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -98,7 +97,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Frank Simancik',
             socialSecretary: 'Stephen Angus',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -109,7 +107,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Frank Simancik',
             socialSecretary: 'Stephen Angus',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -120,7 +117,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Frank Simancik',
             socialSecretary: 'Rachael Borek',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -131,7 +127,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Stephen Angus',
             socialSecretary: 'Rachael Borek',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -142,7 +137,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: 'Stephen Angus',
             socialSecretary: 'Tom Cutter',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -153,7 +147,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: '',
             socialSecretary: '',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         },
         {
@@ -164,7 +157,6 @@ app.controller('CommitteeCtrl', function ($scope) {
             itOfficer: '',
             socialSecretary: '',
             captain: '',
-            noviceCaptain: '',
             kitOfficer: ''
         }
     ];

@@ -2,8 +2,8 @@
     <div class="row my-row">
         <h3 class="heading-top">Current Committee</h3>
     </div><!--/row-->
-    <div class="row my-row">
-        <div class="col-sm-3" ng-repeat="member in committee">
+    <div class="row my-row" ng-repeat="committeeRow in committeeRows">
+        <div class="col-sm-3" ng-repeat="member in committeeRow">
             <div class="panel panel-custom">
                 <div class="panel-body" id="profile-body">
                     <img src="pictures/{{member.picture}}" class="profile">
@@ -12,7 +12,7 @@
                 </div><!--/panel-body-->
                 <div class="panel-footer" id="profile-footer">
                     <p>
-                        <b>Email:</b> <br> &nbsp; 
+                        <b>Email:</b> <br> 
                         <a href="mailto:{{member.email}}">{{member.email}}</a><br>
                         <b>College:</b> {{member.college}}
                     </p>
@@ -26,15 +26,14 @@
             <table class="committee">
                 <thead>
                     <tr>
-                        <td>Year</td>
-                        <td>President</td>
-                        <td>Secretary</td>
-                        <td>Treasurer</td>
-                        <td>IT/Webmaster</td>
-                        <td>Social secretary</td>
-                        <td>Captain</td>
-                        <td>Novice captain</td>
-                        <td>Kit officer</td>
+                        <td><b>Year</b></td>
+                        <td><b>President</b></td>
+                        <td><b>Secretary</b></td>
+                        <td><b>Treasurer</b></td>
+                        <td><b>IT/Webmaster</b></td>
+                        <td><b>Social secretary</b></td>
+                        <td><b>Captain</b></td>
+                        <td><b>Kit officer</b></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,7 +45,6 @@
                         <td>{{committee.itOfficer}}</td>
                         <td>{{committee.socialSecretary}}</td>
                         <td>{{committee.captain}}</td>
-                        <td>{{committee.noviceCaptain}}</td>
                         <td>{{committee.kitOfficer}}</td>
                     </tr>
             </tbody>
@@ -54,6 +52,7 @@
         </div><!--/committee-container-->
         <br>
         <ul>
+            <li>Michal Bock - Novice Captain in 2014/5</li>
             <li>Sebastian Leptihn - Senior Member in 2009/0</li>
             <li>Amy Tregunna - Vice President in 2007/8</li>
         </ul>        
