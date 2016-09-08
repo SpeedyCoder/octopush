@@ -1,0 +1,23 @@
+<div class="container">
+     <div class="row my-row" ng-repeat="article in articles">
+        <div class="col-sm-12">
+            <div class="panel panel-custom">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-7" id="news-title">
+                            <h3 class="panel-title">{{article.title}}</h3>
+                        </div><!--/col-->
+                        <div class="col-xs-5" id="news-date">
+                            <h3 class="panel-title" style="text-align:right;">
+                                {{article.date}}
+                            </h3>
+                        </div><!--/col-->
+                    </div><!--/row-->
+                </div>
+                <div class="panel-body">
+                    <p>{{article.text}}</p>
+                </div><!--/panel-body-->
+            </div><!--/panel-->
+        </div><!--/col-->
+    </div><!--/row-->
+</div><!--/container-->

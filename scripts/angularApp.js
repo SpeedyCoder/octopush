@@ -9,6 +9,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         templateUrl: 'home/home.html',
         controller: 'HomeCtrl'
     })
+    .state('news', {
+        url: '/news',
+        templateUrl: 'news/news.html',
+        controller: 'NewsCtrl'
+    })
     .state('club', {
         url: '/club',
         templateUrl: 'club/club.html'

@@ -8,3 +8,8 @@
     position: absolute;
     right: 15px;
 }
+
+#panel-home {
+    height: 180px;
+    overflow: hidden;
+}

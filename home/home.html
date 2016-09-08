@@ -1,62 +1,63 @@
 <div class="container">
-  <div class="jumbotron">
-    <h1>Welcome to our website!</h1>
-    <p>Find out more about the Oxford University Octopush Club.</p>
-  </div><!-- /jumbotron -->
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-custom">
-        <div class="panel-heading">
-          <h3 class="panel-title">What is octopush?</h3>
-        </div><!-- /panel-heading-->
-          <div class="panel-body" style="height:180px;">
-              <p>
-                Octopush (Underwater Hockey) is an exciting, 3-dimensional sport
-                like none other you've played before. Two teams of 6 battle 
-                underwater to flick, push and manoeuvre a 1.2kg puck into their 
-                opponents' goal at the other end of the pool floor all while 
-                holding their breath.
-              </p>
-              
-          </div><!-- /panel-body-->
-          <div class="panel-footer parent-float">
-            <a href="#octopush" class="btn btn-custom float-right" role="button">Read more >></a>
-          </div><!-- /panel-footer-->
-        </div><!-- /panel-->
-    </div><!-- /col-->
-    <div class="col-sm-4">
-      <div class="panel panel-custom">
-        <div class="panel-heading">
-          <h3 class="panel-title">Playing at Oxford</h3>
-        </div><!-- /panel-heading-->
-        <div class="panel-body" style="height:180px;">
-          <p>
-            We train on Thursdays and Saturdays during 
-            <a href="http://www.ox.ac.uk/about/facts-and-figures/dates-of-term" target="blank">full term</a> at 
-            <a href="http://www.sport.ox.ac.uk/facilities/iffley-road/swimming-pool/" target="blank">Rosenblatt pool</a>.
-            <br><br>
-            To receive details of training sessions, subscribe to our mailing list by sending a blank email to 
-            <br> <a href="mailto:octopush-subscribe@maillist.ox.ac.uk">octopush-subscribe@maillist.ox.ac.uk</a> 
-            and follow the instructions in the response.</p>
-            </div><!-- /panel-body-->
-        <div class="panel-footer parent-float">
-            <a href="#playing" class="btn btn-custom float-right" role="button">Read more >></a>
-          </div><!-- /panel-footer-->
-      </div><!-- /panel-->
-    </div><!-- /col-->
-    <div class="col-sm-4">
-      <div class="panel panel-custom">
-          <div class="panel-heading">
-            <h3 class="panel-title">Club news</h3>
-          </div><!-- /panel-heading-->
-          <div class="panel-body" style="height:180px;">
-            <h4>Under construction...</h4>
-
-          </div><!-- /panel-body-->
-          <div class="panel-footer parent-float">
-            <a href="#news" class="btn btn-custom float-right" role="button">Read more >></a>
-          </div><!-- /panel-footer-->
-        </div><!-- /panel-->
-    </div><!--/col--> 
-  </div><!-- /row-->
+    <div class="jumbotron">
+        <h1>Welcome to our website!</h1>
+        <p>Find out more about the Oxford University Octopush Club.</p>
+    </div><!-- /jumbotron -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-custom">
+                <div class="panel-heading">
+                    <h3 class="panel-title">What is octopush?</h3>
+                </div><!-- /panel-heading-->
+                <div class="panel-body" id="panel-home">
+                    <p>
+                        Octopush (Underwater Hockey) is an exciting, 3-dimensional sport
+                        like none other you've played before. Two teams of 6 battle 
+                        underwater to flick, push and manoeuvre a 1.2kg puck into their 
+                        opponents' goal at the other end of the pool floor all while 
+                        holding their breath.
+                    </p>
+                  
+                </div><!-- /panel-body-->
+                <div class="panel-footer parent-float">
+                    <a href="#octopush" class="btn btn-custom float-right" role="button">Read more >></a>
+                </div><!-- /panel-footer-->
+            </div><!-- /panel-->
+        </div><!-- /col-->
+        <div class="col-sm-4">
+            <div class="panel panel-custom">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Playing at Oxford</h3>
+                </div><!-- /panel-heading-->
+                <div class="panel-body" id="panel-home">
+                    <p>
+                        We train on Thursdays and Saturdays during 
+                        <a href="http://www.ox.ac.uk/about/facts-and-figures/dates-of-term" target="blank">full term</a> at 
+                        <a href="http://www.sport.ox.ac.uk/facilities/iffley-road/swimming-pool/" target="blank">Rosenblatt pool</a>.
+                        <br><br>
+                        To receive details of training sessions, subscribe to our mailing list by sending a blank email to 
+                        <br> <a href="mailto:octopush-subscribe@maillist.ox.ac.uk">octopush-subscribe@maillist.ox.ac.uk</a> 
+                        and follow the instructions in the response.
+                    </p>
+                </div><!-- /panel-body-->
+                <div class="panel-footer parent-float">
+                    <a href="#playing" class="btn btn-custom float-right" role="button">Read more >></a>
+                </div><!-- /panel-footer-->
+            </div><!-- /panel-->
+        </div><!-- /col-->
+        <div class="col-sm-4">
+            <div class="panel panel-custom">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Club news</h3>
+                </div><!-- /panel-heading-->
+                <div class="panel-body" id="panel-home">
+                    <h4 class="heading-top">{{article.title + ' - ' + article.date}}</h4>
+                    <p>{{article.text}}</p>
+                </div><!-- /panel-body-->
+                <div class="panel-footer parent-float">
+                    <a href="#news" class="btn btn-custom float-right" role="button">Read more >></a>
+                </div><!-- /panel-footer-->
+            </div><!-- /panel-->
+        </div><!--/col--> 
+    </div><!-- /row-->
 </div><!-- /container-->
